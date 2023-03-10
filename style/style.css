@@ -1,56 +1,105 @@
 * {
   font-family: "Poppins";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-header {
+#acceuil {
   background: radial-gradient(rgba(139, 195, 245, 0.27), rgba(18, 148, 184, 0.8392156863));
+  height: 100vh;
 }
-header nav {
+#acceuil header {
+  height: 20%;
+}
+#acceuil header nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
-header nav h2 {
+#acceuil header nav h2 {
   margin-top: 11px;
-  margin-left: 30px;
+  margin-left: 60px;
   color: white;
   font-size: xx-large;
 }
-header nav ul {
+#acceuil header nav ul {
   margin-top: 20px;
 }
-header nav li {
-  display: inline;
-  margin-right: 20px;
-}
-header nav a {
+#acceuil header nav ul a {
   color: white;
   text-decoration: none;
 }
-header nav div {
-  margin-top: 20px;
-  margin-right: 30px;
+#acceuil header nav ul a:hover {
+  color: #cad2d9;
 }
-header nav i {
+#acceuil header nav li {
+  display: inline;
+  margin-right: 20px;
+}
+#acceuil header nav .icon {
+  margin-right: 40px;
+}
+#acceuil header nav .icon a {
   color: white;
-  margin-left: 10px;
+  text-decoration: none;
+  margin-left: 15px;
 }
-header div {
+#acceuil #text_img {
   justify-content: space-between;
+  margin-top: 80px;
+  align-items: center;
 }
-header div .container {
+#acceuil #text_img .container {
   width: 40%;
-  margin-left: 120px;
+  margin-left: 10em;
 }
-header div .container h2 {
-  font-size: 35px;
-  margin-bottom: 0px;
-  width: 95%;
+#acceuil #text_img .container h2 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  width: 80%;
 }
-header div .container #paragraphe {
+#acceuil #text_img .container p {
   text-align: justify;
+  width: 60%;
+  margin-bottom: 20px;
+}
+#acceuil #text_img .container #bouton {
+  position: relative;
+  display: inline-block;
   width: 70%;
 }
-header div img {
+#acceuil #text_img .container #bouton input {
+  background: whitesmoke;
+  border: 0;
+  border-radius: 40px;
+  color: #8196aa;
+  padding: 15px;
+  width: 100%;
+}
+#acceuil #text_img .container #bouton input:focus {
+  outline: none;
+}
+#acceuil #text_img .container #bouton input::-moz-placeholder {
+  color: #8196aa;
+}
+#acceuil #text_img .container #bouton input::placeholder {
+  color: #8196aa;
+}
+#acceuil #text_img .container #bouton button {
+  background: rgba(22, 151, 189, 0.7411764706);
+  border: 0;
+  border-radius: 40px;
+  color: white;
+  padding: 10px 30px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+#acceuil #text_img .container #bouton button:hover {
+  background: rgba(121, 189, 210, 0.9607843137);
+}
+#acceuil #text_img img {
   width: 40%;
-  margin-bottom: 60px;
+  margin-right: 14em;
 }/*# sourceMappingURL=style.css.map */
