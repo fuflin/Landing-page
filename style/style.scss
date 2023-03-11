@@ -161,7 +161,7 @@
 
         .container{
             width: 25%;
-            background: radial-gradient(rgb(139, 195, 245, 0.27), #1294b8d6);
+            background: radial-gradient(rgb(139, 195, 245, 0.47), #1294b8d6);
             height: 350px;
             border-radius: 10px;
             margin: 0px 20px;
@@ -169,6 +169,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            transition-duration: 0.5s;
+            
 
             i{
                 text-align: center;
@@ -184,9 +186,13 @@
             }
 
             p{
-                width: 90%;
+                width: 80%;
                 text-align: center;
             }
+        }
+
+        .container:hover{
+            transform: translateY(-10px);
         }
     }
 }
