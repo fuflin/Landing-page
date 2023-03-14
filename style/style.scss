@@ -223,12 +223,14 @@
             font-size: 50px;
             width: 70%;
             margin: auto;
+            margin-bottom: 20px;
         }
 
         p{
             font-size: 20px;
             width: 42%;
             margin: auto;
+            margin-bottom: 80px;
         }
     }
 
@@ -244,6 +246,10 @@
             align-items: center;
             margin: 0px 30px;
 
+            p{
+                margin-bottom: 60px;
+            }
+
             div{
                 text-align: center;
             }
@@ -255,9 +261,15 @@
 
                 img{
                     display: flex;
-                    width: 100%;
+                    width: 80%;
                     border-radius: 50%;
-                    
+                    filter: grayscale(1);
+                }
+
+                img:hover{
+                    filter: grayscale(0);
+                    transition: 0.8s;
+                    transform: scale(1.1);
                 }
             }
         }
