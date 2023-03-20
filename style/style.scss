@@ -11,7 +11,6 @@
     min-height: 100vh;
 
     header {
-        height: 20%;
         display: flex;
 
         h1 {
@@ -25,7 +24,6 @@
         nav {
             display: flex;
             justify-content: center;
-            margin-bottom: 100px;
             align-items: center;
             width: 70%;
             font-size: 20px;
@@ -135,6 +133,18 @@
         }
 
     }
+}
+
+.scroll{
+
+    cursor: pointer;
+    position: sticky;
+    font-size: 50px;
+    top: 90%;
+    left: 95%;
+    background-color: transparent;
+    border: none;
+    z-index: 5;
 }
 
 #Features{
@@ -267,8 +277,8 @@
                 #socials{
                     display: flex;
                     position: absolute;
-                    top : 25%; 
-                    left: 20px;
+                    top : 28%; 
+                    left: 15px;
                     z-index: -1;
                     transition: all .2s linear;
                     opacity: 0;
@@ -281,6 +291,7 @@
                         border-radius: 50%;
                         margin-bottom: 5px;
                         text-decoration: none;
+                        padding: 5px;
                     }
                 }
 
@@ -322,7 +333,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: #00000045;
+        background-color: #00000053;
         z-index: 0;
         top: 0;
     }
@@ -522,17 +533,6 @@
     }
 }
 
-.scroll{
-
-    position: sticky;
-    font-size: 45px;
-    top: 90%;
-    left: 95%;
-    background-color: transparent;
-    border: none;
-    z-index: 5;
-}
-
 #pricing{
 
     min-height: 100vh;
@@ -607,8 +607,9 @@
 
             text-align: center;
             font-size: 40px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             margin-top: 20px;
+            padding: 20px 0;
         }
 
         .aside{
@@ -761,6 +762,7 @@
         justify-content: center;
         font-size: 30px;
         
+        
 
         a{
 
@@ -771,8 +773,15 @@
             margin: 20px 45px;
             padding: 10px;
             color: white;
+
+            &:hover{
+
+                color: rgba(0, 0, 0, 0.865);
+            }
             } 
         }
+
+        
         
     }
 
@@ -792,6 +801,11 @@
 
             color: white;
             text-decoration: none;
+
+            &:hover{
+
+                color: rgba(0, 0, 0, 0.865);
+            }
         }
     }
 
@@ -801,4 +815,8 @@
         justify-content: center;
         color: white;
     }
+
+    
 }
+
+@import './_media_tablette';
