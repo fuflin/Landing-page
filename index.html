@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/style.css">
     <style>@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');</style>
     <title>Landing page</title>
+    
 </head>
 
 <!-- Partie Accueil-->
@@ -17,7 +18,8 @@
     <section id="acceuil">
         <header>
             <h1>Kucra</h1>
-            <nav>
+            <nav id="navbar" class="navbar">
+                <a id="closeBtn" href="" class="close">x</a>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#Features">FEATURES</a></li>
@@ -29,11 +31,19 @@
                     <li><a href="#footer">CONTACT</a></li>
                 </ul>
             </nav>
+            <a href="#" id="openBtn" class="active">
+                <span class="burger-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+            </a>
             <ul class="icon">
                     <li><a href="#" class="fa-brands fa-facebook-f"></a></li>
                     <li><a href="#" class="fa-brands fa-twitter"></a></li>
                     <li><a href="#" class="fa-brands fa-instagram"></a></li>
             </ul>
+            <script src="app.js"></script>
         </header>
         <div id="text_img" style="display: flex;">
             <div class="container">
@@ -358,7 +368,7 @@
     </footer>
     
     <script src="https://kit.fontawesome.com/1d109596f9.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    
 </body>
 
 </html>

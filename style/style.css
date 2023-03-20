@@ -612,4 +612,73 @@
   display: flex;
   justify-content: center;
   color: white;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #acceuil header .navbar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  #acceuil header .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  #acceuil header .navbar ul a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  #acceuil header .navbar ul a:hover {
+    color: #111;
+  }
+  #acceuil header .navbar .active {
+    left: 0;
+  }
+  #acceuil header .navbar .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  #acceuil header .burger-icon {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  #acceuil #text_img .container {
+    margin-left: 2em;
+    width: 50%;
+  }
+  #acceuil #text_img .container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  #acceuil #text_img .container p {
+    text-align: justify;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  #acceuil #text_img .container #bouton {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+  }
+  #acceuil #text_img .container img {
+    width: 50%;
+    margin-right: 2em;
+  }
 }/*# sourceMappingURL=style.css.map */
