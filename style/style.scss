@@ -522,6 +522,17 @@
     }
 }
 
+.scroll{
+
+    position: sticky;
+    font-size: 45px;
+    top: 90%;
+    left: 95%;
+    background-color: transparent;
+    border: none;
+    z-index: 5;
+}
+
 #pricing{
 
     min-height: 100vh;
