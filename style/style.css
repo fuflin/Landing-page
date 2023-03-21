@@ -206,6 +206,7 @@
   width: 42%;
   margin: auto;
   margin-bottom: 80px;
+  color: grey;
 }
 #Teams #pictures {
   display: flex;
@@ -777,7 +778,7 @@
     height: 80%;
     width: 250px;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 10%;
     right: -250px;
     background-color: rgba(0, 0, 0, 0.412);
@@ -814,7 +815,8 @@
     color: black;
     position: fixed;
     top: 2%;
-    right: 22%;
+    right: 5%;
+    z-index: 10;
   }
   #acceuil #text_img {
     display: flex;
@@ -853,33 +855,165 @@
   #Features .card {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
   }
   #Features .card .box {
     width: 75%;
     margin: auto;
     margin-bottom: 20px;
   }
+  #Teams #titleT h3 {
+    font-size: 25px;
+  }
+  #Teams #titleT p {
+    width: 90%;
+  }
   #Teams #pictures {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  #Teams #pictures .imgs {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+  #Teams #pictures .imgs figure {
+    flex-direction: column;
+    border-radius: 1px;
+  }
+  #Teams #pictures .imgs figure img {
+    filter: none;
+  }
+  #Teams #pictures .imgs figure #socials {
+    opacity: unset;
+    position: unset;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  #Teams #pictures .imgs figure #socials a {
+    margin: 0;
+    font-size: 30px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: rgb(102, 208, 244);
+  }
+  #Teams #pictures .imgs figure:hover img {
+    filter: none;
+    transform: none;
+  }
+  #Teams #pictures .imgs figure:hover #socials {
+    transform: none;
+  }
+  #group #Parallax .inner h3 {
+    text-align: center;
+  }
+  #group #Parallax .inner p {
+    width: 80%;
+  }
+  #logo .text {
+    margin: 6em 0;
+  }
+  #logo .text h2 {
+    text-align: center;
+  }
+  #logo .text p {
+    width: 90%;
   }
   #logo .icons {
     display: flex;
     flex-direction: column;
+    margin: 0;
+  }
+  #logo .icons img {
+    opacity: 1;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  #blog .titleB {
+    margin-bottom: 50px;
   }
   #blog .container {
     display: flex;
     flex-direction: column;
+    margin: 10px;
+  }
+  #blog .container .card {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.2588235294);
+    border-radius: 5px;
+  }
+  #blog .container .card figure .content {
+    position: initial;
+    opacity: 1;
+    text-align: center;
+  }
+  #blog .container .card figure .content i {
+    color: black;
+  }
+  #blog .container .card h4 {
+    text-align: center;
+  }
+  #blog .container .card p {
+    text-align: center;
+  }
+  #blog .container .card a {
+    display: flex;
+    justify-content: center;
   }
   #pricing .head {
     display: flex;
     flex-direction: column;
   }
-  #pricing .container {
+  #pricing .head .text {
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  #pricing .head .text button {
+    width: 100%;
+  }
+  #pricing .head div {
+    width: 100%;
+  }
+  #pricing .prices .aside {
+    width: 90%;
+  }
+  #pricing .prices .container {
     display: flex;
     flex-direction: column;
   }
+  #pricing .prices .container .card {
+    width: 90%;
+    position: relative;
+  }
+  #pricing .prices .container .card .remise {
+    position: absolute;
+    bottom: 86%;
+    left: 82%;
+  }
   #footer {
     width: 100%;
+  }
+  #footer .logos {
+    border: none;
+  }
+  #footer .logos a i {
+    margin: 0 10px;
+    margin-bottom: 15px;
+    border: none;
+  }
+  #footer .contact {
+    margin: 5px 50px;
+  }
+  #footer .contact p {
+    margin: 0 20px;
+  }
+  #footer .end p {
+    width: 70%;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
