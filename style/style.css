@@ -812,7 +812,7 @@
   }
   #acceuil header i {
     font-size: 40px;
-    color: black;
+    color: grey;
     position: fixed;
     top: 2%;
     right: 5%;
@@ -927,7 +927,7 @@
   }
   #logo .icons img {
     opacity: 1;
-    width: 80%;
+    width: 60%;
     margin: auto;
     margin-bottom: 20px;
   }
