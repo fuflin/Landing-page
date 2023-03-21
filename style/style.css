@@ -760,4 +760,126 @@
     padding: 4px;
     height: 11%;
   }
+}
+@media only screen and (max-device-width: 400px) {
+  #acceuil {
+    min-height: 70vh;
+  }
+  #acceuil header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #acceuil header h1 {
+    margin: 0;
+  }
+  #acceuil header .navbar {
+    height: 80%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    right: -250px;
+    background-color: rgba(0, 0, 0, 0.412);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  #acceuil header .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  #acceuil header .navbar ul a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  #acceuil header .icon li a {
+    margin: 0 10px;
+  }
+  #acceuil header .navbar.active {
+    right: 0;
+  }
+  #acceuil header .navbar.close {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+  }
+  #acceuil header i {
+    font-size: 40px;
+    color: black;
+    position: fixed;
+    top: 2%;
+    right: 22%;
+  }
+  #acceuil #text_img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  #acceuil #text_img .container {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  #acceuil #text_img .container h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: center;
+  }
+  #acceuil #text_img .container p {
+    text-align: justify;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  #acceuil #text_img .container #bouton {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  #acceuil #text_img img {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  #Features .titleF h1 {
+    font-size: 40px;
+  }
+  #Features .card {
+    display: flex;
+    flex-direction: column;
+  }
+  #Features .card .box {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  #Teams #pictures {
+    display: flex;
+    flex-direction: column;
+  }
+  #logo .icons {
+    display: flex;
+    flex-direction: column;
+  }
+  #blog .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #pricing .head {
+    display: flex;
+    flex-direction: column;
+  }
+  #pricing .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
