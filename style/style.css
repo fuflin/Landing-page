@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
 * {
   font-family: "Poppins";
   box-sizing: border-box;
@@ -615,14 +616,25 @@
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #acceuil {
+    min-height: 70vh;
+  }
+  #acceuil header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #acceuil header h1 {
+    margin-top: 0;
+  }
   #acceuil header .navbar {
-    height: 100%;
+    height: 80%;
     width: 250px;
     position: fixed;
     z-index: 1;
-    top: 0;
-    left: -250px;
-    background-color: #e8e8e8;
+    top: 10%;
+    right: -250px;
+    background-color: rgba(0, 0, 0, 0.412);
     padding-top: 60px;
     transition: left 0.5s ease;
   }
@@ -635,28 +647,31 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s;
   }
   #acceuil header .navbar ul a:hover {
     color: #111;
   }
-  #acceuil header .navbar .active {
-    left: 0;
+  #acceuil header .icon li a {
+    margin-top: 0;
   }
-  #acceuil header .navbar .close {
+  #acceuil header .navbar.active {
+    right: 0;
+  }
+  #acceuil header .navbar.close {
     position: absolute;
     top: 0;
-    right: 25px;
+    left: 25px;
     font-size: 36px;
   }
-  #acceuil header .burger-icon {
-    display: block;
-    width: 35px;
-    height: 35px;
-    background-color: black;
-    margin: 6px 0;
+  #acceuil header i {
+    font-size: 40px;
+    color: black;
+    position: fixed;
+    top: 20px;
+    right: 30px;
   }
   #acceuil #text_img .container {
     margin-left: 2em;
@@ -677,8 +692,72 @@
     display: inline-block;
     width: 90%;
   }
-  #acceuil #text_img .container img {
-    width: 50%;
-    margin-right: 2em;
+  #acceuil #text_img img {
+    width: 40%;
+    margin-right: 4em;
+  }
+  .scroll {
+    left: 90%;
+  }
+  #Teams #pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  #Teams #pictures .imgs {
+    width: 38%;
+  }
+  #Teams #pictures .imgs div figure img {
+    filter: none;
+  }
+  #Teams #pictures .imgs div figure #socials {
+    opacity: 1;
+    z-index: 1;
+  }
+  #logo .text p {
+    width: 75%;
+  }
+  #logo .icons {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  #logo .icons img {
+    opacity: 1;
+    width: 33%;
+  }
+  #blog .container .card {
+    width: 30%;
+  }
+  #blog .container .card p {
+    width: 100%;
+  }
+  #pricing .head .text {
+    padding-left: 15px;
+  }
+  #pricing .head .text h4 {
+    font-size: 25px;
+  }
+  #pricing .head .text .para {
+    font-size: 17px;
+  }
+  #pricing .head .text button {
+    width: 47%;
+  }
+  #pricing .prices .container {
+    margin: 0;
+  }
+  #pricing .prices .container .card {
+    width: 30%;
+  }
+  #pricing .prices .container .card .info {
+    font-size: 14px;
+  }
+  #pricing .prices .container .card .remise {
+    bottom: 92%;
+    left: 88%;
+    width: 23%;
+    padding: 4px;
+    height: 11%;
   }
 }/*# sourceMappingURL=style.css.map */

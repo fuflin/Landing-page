@@ -2,17 +2,29 @@
     
 #acceuil{
 
+    min-height: 70vh;
+    
     header{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h1{
+
+            margin-top: 0;
+        }
 
         .navbar{
 
-            height: 100%;
+            height: 80%;
             width: 250px;
             position: fixed;
             z-index: 1;
-            top: 0;
-            left: -250px;
-            background-color: #e8e8e8;
+            top: 10%;
+            right: -250px;
+            background-color: rgba(0, 0, 0, 0.412);
+            
             padding-top: 60px;
             transition: left 0.5s ease;
 
@@ -28,7 +40,7 @@
                 padding: 8px 8px 8px 32px;
                 text-decoration: none;
                 font-size: 25px;
-                color: #818181;
+                color: white;
                 display: block;
                 transition: 0.3s;
 
@@ -38,26 +50,37 @@
                     }
                 }
             }
-           
-            .active {
-                left: 0;
-              }
-              
-              
-            .close {
-                position: absolute;
-                top: 0;
-                right: 25px;
-                font-size: 36px;
+        }
+
+        .icon{
+
+            li{
+
+                a{
+
+                    margin-top: 0;
+                }
             }
         }
 
-        .burger-icon {
-            display: block;
-            width: 35px;
-            height: 35px;
-            background-color: black;
-            margin: 6px 0;
+        .navbar.active {
+            right: 0;
+          }
+          
+          
+        .navbar.close {
+            position: absolute;
+            top: 0;
+            left: 25px;
+            font-size: 36px;
+        }
+
+        i{
+            font-size: 40px;
+            color: black;
+            position: fixed;
+            top: 20px;
+            right: 30px;
           }
     }
 
@@ -89,10 +112,141 @@
                 width: 90%;
             }
 
-            img{
+            
+        }
 
-                width: 50%;
-                margin-right: 2em;
+        img{
+
+            width: 40%;
+            margin-right: 4em;
+        }
+    }
+}
+
+.scroll{
+
+    left: 90%;
+}
+
+#Teams{
+
+    #pictures{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 40px;
+
+        .imgs{
+
+            width: 38%;
+
+            div{
+
+                figure{
+
+                    img{
+
+                        filter: none;
+                    }
+
+                    #socials{
+
+                        opacity: 1;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#logo{
+
+    .text{
+
+        p{
+
+            width: 75%;
+        }
+    }
+    .icons{
+
+        margin: 0;
+        flex-wrap: wrap;
+
+        img{
+
+            opacity: 1;
+            width: 33%;
+        }
+    }
+}
+
+#blog{
+
+    .container{
+
+        .card{
+
+            width: 30%;
+
+            p{
+
+                width: 100%;
+            }
+        }
+    }
+}
+
+#pricing{
+
+    .head{
+
+        .text{
+
+            padding-left: 15px;
+
+            h4{
+
+                font-size: 25px;
+            }
+
+            .para{
+
+                font-size: 17px;
+            }
+
+            button{
+
+                width: 47%;
+            }
+        }
+    }
+
+    .prices{
+
+        .container{
+
+            margin: 0;
+
+            .card{
+
+                width: 30%;
+
+                .info{
+
+                    font-size: 14px;
+                }
+
+                .remise{
+
+                    bottom: 92%;
+                    left: 88%;
+                    width: 23%;
+                    padding: 4px;
+                    height: 11%;
+                }
             }
         }
     }
